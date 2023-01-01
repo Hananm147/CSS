@@ -1,0 +1,16 @@
+
+.nav {
+    border: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    background-color: beige;
+  }
+a {
+text-decoration: none;
+display: inline;
+}
+.nav ul li a {
+    float: left;
+}
