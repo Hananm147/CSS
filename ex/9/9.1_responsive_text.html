@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive text</title>
+    <style>
+        /* phone */
+        @media(max-width: 500px) {
+            body{
+            font-size: 20px;
+            }
+        }
+             /* Tablet */
+        @media(min-width: 501px) and (max-width: 768px) {
+        body{
+            font-size: 40px;
+            }
+        }
+        /* normal */
+        @media(min-width: 769px) and (max-width: 1200px){
+        body{
+            font-size: 60px;
+        }
+    }
+        /* widwscn */
+        @media(min-width: 1201px){
+            body{
+            font-size: 80px;
+            }
+}
+    
+    </style>
+</head>
+<body>
+<div id="widescreen"><h1>widescreen</h1></div>
+<div id="normal"><h1>normal</h1></div>
+<div id="tablet"><h1>Tablet</h1></div>
+<div id="phone"><h1>Phone</h1></div>
+</body>
+</html>
