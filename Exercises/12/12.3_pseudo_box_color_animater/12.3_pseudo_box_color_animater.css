@@ -11,9 +11,12 @@
     position: absolute;
 }
 
-
 .box1 {
     height: 300px;
     width: 300px;
     background-color: brown;
+}
+
+.box1:hover::before {
+    background-color: blue;
 }
