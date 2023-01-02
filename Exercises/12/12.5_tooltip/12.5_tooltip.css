@@ -1,0 +1,16 @@
+span.tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 20px;
+    padding: 1px 5px;
+    display: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    transition: opacity 0.1s;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  span:hover::before {
+    display: inline-block;
+  }
