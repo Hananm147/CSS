@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: beige;
+}
+
 body {
     line-height: 1.6;
     margin: 0;
@@ -42,7 +46,7 @@ li {
 }
 
 a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
 }
@@ -55,13 +59,13 @@ align-items: center;
 }
 
 .welcome h1 {
-color: #fff;
+color: var(--text-color);
 font-size: 60px;
 font-weight: bolder;
 }
 
 .welcome p {
-    color: #fff;
+    color: var(--text-color);
 font-size: 35px;
 font-weight: bolder;
 }
@@ -75,7 +79,7 @@ border-radius: 15px;
 }
 
 .button:hover{
-    background-color: #fff;
+    background-color: var(--text-color);
 }
 
 
