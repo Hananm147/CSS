@@ -1,57 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
- 
-  body {
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 90vw;
+  height: 90vh;
 }
-  
-  .gallery {
-    width: 60vw;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 0.5fr);
-    grid-auto-rows: 100px;
+.grid {
+display: grid;
+grid-template-areas:
+'robot robot garden garden garden kids bikes bikes'
+'robot robot garden garden garden kids bikes bikes'
+'sunset sunset garden garden garden lge lge car'
+'sunset sunset sea sea wave lge lge car'
+'sunset sunset sea sea pumba pumba pumba car'
+'trl fort fort cartoon pumba pumba pumba fish'
+'trl fort fort cartoon pumba pumba pumba fish';
+grid-gap: 0.3rem;
 }
 
-/* .wrapper img:nth-child(4n + 1) {
-    grid-column-end: span 2;
-    grid-row-end: span 2;
-  }
-  .wrapper img:nth-child(2) {
-    grid-column: 3;
-    grid-row: 2 / 4;
-  }
-  .wrapper img:nth-child(5) {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-  } */
+.grid div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
-  .gallery > div {
-    /* object-fit: cover; */
-    width: 5rem;
-    height: 5rem;
-    padding: 1rem 1rem;
-    /* border-radius: 1.5rem; */
+  .img1 {
+  grid-area: robot;
   }
 
-  .one {
-    grid: robot;
+  .img2 {
+  grid-area: garden;
   }
 
-  .two {
-    grid: garden;
+  .img3 {
+  grid-area: kids;
   }
 
-  .three {
-    grid: kids;
+  .img4 {
+    grid-area: bikes;
   }
 
-  .four {
-    grid: bikes;
+  .img5 {
+    grid-area: sunset;
+  }
+
+  .img6 {
+    grid-area: sea;
+  }
+
+  .img7 {
+    grid-area: wave;
+  }
+
+  .img8 {
+    grid-area: lge;
+  }
+
+  .img9 {
+    grid-area: car;
+  }
+
+  .img10 {
+    grid-area: trl;
+  }
+
+  .img11 {
+    grid-area: fort;
+  }
+
+  .img12 {
+    grid-area: cartoon;
+  }
+
+  .img13 {
+    grid-area: pumba;
+  }
+
+  .img14 {
+    grid-area: fish;
   }
