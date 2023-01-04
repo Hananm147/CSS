@@ -1,8 +1,10 @@
 body {
-  width: 90vw;
-  height: 90vh;
+  width: 80vw;
+  height: 80vh;
 }
 .grid {
+  width: 80vw;
+  height: 80vh;
 display: grid;
 grid-template-areas:
 'robot robot garden garden garden kids bikes bikes'
@@ -12,7 +14,7 @@ grid-template-areas:
 'sunset sunset sea sea pumba pumba pumba car'
 'trl fort fort cartoon pumba pumba pumba fish'
 'trl fort fort cartoon pumba pumba pumba fish';
-grid-gap: 0.3rem;
+grid-gap: 1rem;
 }
 
 .grid div img {
