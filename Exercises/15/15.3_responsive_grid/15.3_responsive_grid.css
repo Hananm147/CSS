@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    box-sizing: border-box;
+}
+  
+  .grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 4rem 4rem 4rem 4rem 4rem;
+    grid-template-areas:
+      'header header header header'
+      'sidebar content content sidebar_2'
+      'sidebar content content sidebar_2'
+      'footer footer footer footer';
+    gap: 1rem;
+    padding: 2rem;
+}
+  
+  .grid-container > div {
+    display: flex;
+    content: '';
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-size: 1.6rem;
+    border-radius: 1.5rem;
+    color: white;
+  }
+  
+  .header {
+    background-color: red;
+    grid-area: header;
+  }
+  .sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+  }
+  .content {
+    background-color: green;
+    grid-area: content;
+  }
+  .sidebar_2 {
+    background-color: purple;
+    grid-area: sidebar_2;
+  }
+  .footer {
+    background-color: yellowgreen;
+    grid-area: footer;
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem;
+        grid-template-areas:
+          'header'
+          'sidebar'
+          'content'
+          'content'
+          'sidebar_2'
+          'footer';
+        gap: 1rem;
+        padding: 2rem;
+  }
+}
+
+@media (min-width:601px) and (max-width: 900px) {
+    .grid-container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          'header header header header'
+          'sidebar content content content'
+          'sidebar content content content'
+          'sidebar_2 sidebar_2 sidebar_2 sidebar_2'
+          'footer footer footer footer';
+        gap: 1rem;
+        padding: 2rem;
+}
+/* .sidebar {
+    background-color: blue;
+    grid-area: sidebar;
+    display: flex;
+    content: '';
+    justify-content:flex-start;
+    align-items: flex-start;
+} */
+}
+
